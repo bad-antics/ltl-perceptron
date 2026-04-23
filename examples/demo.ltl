@@ -1,0 +1,10 @@
+// examples/demo.ltl — runnable demo for ltl_perceptron
+
+import std::io
+use ltl_perceptron as lib
+
+fn main() {
+    io::println("ltl_perceptron demo starting...")
+    let result = lib::main() |> io::inspect()
+    io::println("demo complete")
+}
